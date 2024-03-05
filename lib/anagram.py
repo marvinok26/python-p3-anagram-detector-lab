@@ -3,7 +3,7 @@ class Anagram:
         self.word = word.lower()
 
     def match(self, word_list):
-        return [w for w in word_list if self._is_anagram(w)]
+        return [letter for letter in word_list if self._is_anagram(letter)]
 
     def _is_anagram(self, other_word):
         other_word_lower = other_word.lower()
